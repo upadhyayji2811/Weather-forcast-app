@@ -1,2 +1,2 @@
 # Weather-forcast-app
-Weather forcaset
+Weather
