@@ -7,10 +7,12 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <section
+    <!-- Header -->
+   <section
       class="w-full bg-green-700 text-white text-4xl flex justify-center items-center py-5">
       <h1 class="text-center">Weather Forcast</h1>
     </section>
+    <!-- search bar -->
     <section
       class="w-[96%] flex flex-col lg:flex-row space-x-10 overflow-hidden mt-10 mx-auto box-border">
       <div class="w-full lg:w-2/6 p-2">
@@ -25,6 +27,8 @@
           Search
         </button>
         <p class="text-center text-lg">or</p>
+
+        <!-- Location Button -->
         <button id="location-search" class="w-full cursor-pointer hover:bg-green-600 bg-gray-500 text-white py-2 px-4 text-center my-2 text-lg font-semibold rounded-md">Use current location</button>
         <div>
           <p class="text-lg font-bold mt-5">Search History:</p>
@@ -33,7 +37,7 @@
           </ol>
         </div>
       </div>
-      
+      <!-- 5 day data -->
       <div class="w-full lg:w-4/6" id="result">
         <p class="w-1/2 opacity-50 mt-10 ml-10 text-8xl font-extrabold text-gray-700">Please Search for data.</p>
       </div>
