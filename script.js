@@ -51,7 +51,7 @@ locationSearch.addEventListener("click",()=>{
 
 function fetchData(location) {
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=622b8bb056e542c6a7865159251302&q=${location}&days=6&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=622b8bb056e542c6a7865159251302&q=${location}&days=6&aqi=no&alerts=no`
   )
     .then((res) => res.json())
     .then((data) => {
