@@ -5,7 +5,7 @@ let weatherData;
 let searchHistory = localStorage.getItem("searchHistory") ? JSON.parse(localStorage.getItem("searchHistory")) : [];
 searchRender()
 let result = document.getElementById("result");
-
+// Function to render search history
 function searchRender()
 {
     let searchComponent=document.getElementById("search-history")
@@ -14,7 +14,7 @@ function searchRender()
         searchComponent.innerHTML += `<li onClick="fetchData('${item}')" class="cursor-pointer px-4 py-2 my-4 bg-gray-200">${item}</li>`
     })
 }
-
+// Event listener for search button click
 searchBtn.addEventListener("click", () => {
   if(searchInput.value !="")
   {  fetchData(searchInput.value)
@@ -26,7 +26,7 @@ searchBtn.addEventListener("click", () => {
     alert("Wrong input!")
   }
 });
-
+// Event listener for location search button click
 locationSearch.addEventListener("click",()=>{
   getLocation()
   function getLocation() {
@@ -36,7 +36,7 @@ locationSearch.addEventListener("click",()=>{
       x.innerHTML = "Geolocation is not supported by this browser.";
     }
   }
-  
+  // Function to handle the position data
   function showPosition(position) {
     console.log ("Latitude: " + position.coords.latitude +
     "Longitude: " + position.coords.longitude);
@@ -48,7 +48,7 @@ locationSearch.addEventListener("click",()=>{
     })
   }
 })
-
+// fetching weather data using location variable
 function fetchData(location) {
   fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=622b8bb056e542c6a7865159251302&q=${location}&days=6&aqi=no&alerts=no`
