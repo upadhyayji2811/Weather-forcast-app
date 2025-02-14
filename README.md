@@ -1,7 +1,8 @@
-
 # Weather-forcast-app
-Deployment link: https://weather-forcast-app-chi.vercel.app/
-Git Repository link: https://github.com/upadhyayji2811/Weather-forcast-app
+## Deployment link: https://weather-forcast-app-chi.vercel.app/
+
+
+## Git Repository link: https://github.com/upadhyayji2811/Weather-forcast-app
 
 This web application is created using html, css and js along with tailwind css.
 This is a weather application which uses weather API to fetch weather data by location given by the user.
